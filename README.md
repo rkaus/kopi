@@ -15,6 +15,7 @@ An rkaus coffee house production
   * adjust color palette
     * FIX: The active pane marker on the navbar is black instead of transparent
 
+4. heroku integraion (https://github.com/datademofun/heroku-basic-flask)
 
 # rethink how this website is going to be distributed and what content it should display
 1. is it a sales portal?
