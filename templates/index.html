@@ -22,6 +22,37 @@
     <link href="css/freelancer.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
+    <!-- submit form data to email api -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     function submitToAPI() {
+       var URL = ‘/contact’;
+       var data = {
+         name: $(‘#name’).val(),
+         email: $(‘#email’).val(),
+         email: $(‘#phone’).val(),
+         email: $(‘#message’).val(),
+       };
+       $.ajax({
+         type: ‘POST’,
+         url: URL,
+         dataType: ‘json’,
+         contentType: ‘application/json’,
+         data: JSON.stringify(data),
+         success: function () {
+           // clear form and show a success message
+           alert(‘yay’);
+         },
+         error: function () {
+           // show an error message
+           alert(‘boo’);
+         }
+       });
+     }
+    </script> -->
+
+
+
   </head>
 
   <body id="page-top">
@@ -36,9 +67,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#Coffees">Coffees</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
@@ -53,21 +84,22 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="img/face.png" alt="">
+        <img class="img-fluid" src="img/peaberry_medium-roast.png" alt="">
         <div class="intro-text">
           <span class="name">High Delta Coffee</span>
-          <hr class="star-light">
-          <span class="skills">Home roasted - Small batch - Never Old</span>
+          <!-- <hr class="star-light"> -->
+          <span class="skills">Home Roasted - Small Batch - Never Old</span>
         </div>
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!--
+    <!- Portfolio Grid Section ->
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">Coffee</h2>
         <hr class="star-primary">
-        <!-- <span> Etiopian - Venezuela - Other </span> -->
+        <!- <span> Etiopian - Venezuela - Other </span> ->
         <div class="row">
           <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -128,22 +160,27 @@
               </div>
               <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
             </a>
-          </div> -->
+          </div> ->
         </div>
       </div>
     </section>
+    -->
 
     <!-- About Section -->
     <section class="success" id="about">
       <div class="container">
         <h2 class="text-center">About</h2>
-        <hr class="star-light">
-        <div class="row">
+        <!-- <hr class="star-light"> -->
+        <div class="col-lg-8 mx-auto">
+          <p>I simply love coffee and I source it from places and people who share my love of it. The name High Delta Coffee itself is an homage to the Blue Nile river delta from where many of my tastiest cups have come. I hope to keep connected to the global community of coffee drinkers and use this website as a mutual theatre of our roasted and dark passion.</p>
+        </div>
+
+        <!-- <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p>ME</p><p>Coffee lover, roaster, and conisseur extraordinaire. In the battle to keep my senses, the fullest and finest functionalities of my tastse buds brings to you all the epitome of coffee perfection. </p>
+            <p>--ME--</p><p>Coffee lover, roaster, and conisseur extraordinaire. In the battle to keep my senses, the fullest and finest functionalities of my tastse buds brings to you all the epitome of coffee perfection. </p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p>YOU</p><p>Whether an aspiring drinker or a grizzled veteran scoffing at the follies of youthful sippers - this coffee is for you!</p>
+            <p>--YOU--</p><p>Whether an aspiring drinker or a grizzled veteran scoffing at the follies of youthful sippers - this coffee is for you!</p>
           </div>
           <div class="col-lg-8 mx-auto text-center">
             <a href="#" class="btn btn-lg btn-outline">
@@ -151,19 +188,26 @@
               Buy Buy Buy
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Google Form -->
+    <section id="contact">
+    <div class = "col-lg-8 mx-auto">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4dInrC-RauC1tLrYHTNGKTtYExZxZII_OuarLY1bzAa5QTQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    </section>
+    
+    <!-- Contact Section 
     <section id="contact">
       <div class="container">
         <h2 class="text-center">Contact Me</h2>
         <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. ->
+            <!- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. ->
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
@@ -196,13 +240,13 @@
               <br>
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
+                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton" onClick="submitToAPI()">Send</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="text-center">
@@ -212,10 +256,10 @@
             <div class="footer-col col-md-4">
               <h3>Location</h3>
               <p>Bay Area
-                <br>South Side</p>
+                <br>SJ</p>
             </div>
             <div class="footer-col col-md-4">
-              <h3>Around the Web</h3>
+              <h3>Web</h3>
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
@@ -233,7 +277,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjQ9Kmev_HYAhVI0oMKHdzTBb0QFggsMAA&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Frishi-kaushika-b74b1667&usg=AOvVaw2GpECirLVwSjYFAfS1JvEY">
                     <i class="fa fa-fw fa-linkedin"></i>
                   </a>
                 </li>
@@ -245,9 +289,9 @@
               </ul>
             </div>
             <div class="footer-col col-md-4">
-              <h3>About High Delta Coffee</h3>
-              <p>Family developed website - <br>
-                <a href="github.com/rkaus">find the dev</a>.</p>
+              <h3>WebDev</h3>
+              <p>Family developed - <br>
+                <a href="http://github.com/rkaus">find the dev</a></p>
             </div>
           </div>
         </div>
