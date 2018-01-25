@@ -229,7 +229,38 @@
 </div>
 </section>
  -->
+    
+
     <!-- Contact Section -->
+
+
+<!-- Prevent redirect of google form -->
+<!--     <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            <form name="sentMessage" id ="mG61Hd" action="https://docs.google.com/forms/d/e/1FAIpQLSd4dInrC-RauC1tLrYHTNGKTtYExZxZII_OuarLY1bzAa5QTQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+ -->
+
+
+ <!-- Prevent gform redirect #2 -->
+<script>
+    $('#mG61Hd').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSd4dInrC-RauC1tLrYHTNGKTtYExZxZII_OuarLY1bzAa5QTQ/formResponse",
+            data: $(this).serialize(),
+            type: "POST",
+            crossDomain: true
+            dataType: "xml",
+            success: function(data) {
+                console.log('Submission successful');
+            },
+            error: function(xhr, status, error) {
+                console.log('Submission failed: ' + error);
+            }
+        });
+    });
+</script>
+
     <section id="contact">
       <div class="container">
         <h2 class="text-center">Contact Me</h2>
@@ -237,7 +268,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- <form name="sentMessage" id="contactForm" novalidate> -->
-            <form name="sentMessage" id ="mG61Hd" action="https://docs.google.com/forms/d/e/1FAIpQLSd4dInrC-RauC1tLrYHTNGKTtYExZxZII_OuarLY1bzAa5QTQ/formResponse">
+            <form name="sentMessage" id ="mG61Hd" action="https://docs.google.com/forms/d/e/1FAIpQLSd4dInrC-RauC1tLrYHTNGKTtYExZxZII_OuarLY1bzAa5QTQ/formResponse" method="POST" target="_self" >
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Name</label>
@@ -255,7 +286,7 @@
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" name="entry.1166974658" placeholder="Phone Number">
+                  <input class="form-control" id="phone" type="tel" name="entry.1166974658" placeholder="Phone Number (optional)">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -270,7 +301,7 @@
               <div id="success"></div>
               <div class="form-group">
                 <!-- <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton" onClick="submitToAPI()">Send</button> -->
-                <input class="button" type="submit" value="Submit">
+                <input class="button" type="reset" onclick='document.forms["sentMessage"].submit();' value="Submit">
                 <!-- <button type="submit" class="button">Submit</button> -->
 
               </div>
@@ -279,6 +310,7 @@
         </div>
       </div>
     </section>
+
 
 
     <!-- Footer -->
