@@ -2,6 +2,7 @@
 
 
 /*NAVBAR*/
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
@@ -13,7 +14,7 @@
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  background: #2D190E; }
+  background: #1f1009; }
   #mainNav a:focus {
     outline: none; }
   #mainNav .navbar-brand {
@@ -26,7 +27,7 @@
     #mainNav .navbar-nav li.nav-item a.nav-link {
       color: white; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: #993300;
+        color: #1f1009;
         outline: none; }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
         color: white; }
@@ -39,8 +40,8 @@
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
       color: white;
       border-color: #fff;
-      /*background-color: #993300; */
-      background: #fff;}
+      /*background-color: #993300;*/
+      background: #fff;} 
 
 @media (min-width: 992px) {
   #mainNav {
@@ -55,11 +56,11 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #993300;
+      color: #e8db92;
       border-radius: 3px;
       background: #fff; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #993300;
+        color: #e8db92;
         background: #fff; }
   #mainNav.navbar-shrink {
     padding-top: 10px;
@@ -69,18 +70,18 @@
 
 
 
-/*HEADER*/
+/*HEADER hdc*/
 header.masthead {
   /*padding-top: 100px;
   padding-bottom: 50px;*/
   text-align: center;
   color: white;
-  background: #7F5F48; }
+  background: #C18C4A; }
 
 
   hr.star-light:after {
     color: white;
-    background-color: #993300; }
+    background-color: #C18C4A; }
 
 @media (min-width: 768px) {
   header.masthead {
@@ -95,7 +96,7 @@ header.masthead {
 /* ABOUT */
 section.success {
   color: white;
-  background: #B59580; }
+  background: #662D20; }
 
 
 
@@ -106,9 +107,9 @@ footer {
     margin-bottom: 30px; }
   footer .footer-above {
     padding-top: 50px;
-    background-color: #875C31; }
+    background-color: #560A05; }
   footer .footer-col {
     margin-bottom: 50px; }
   footer .footer-below {
     padding: 25px 0;
-    background-color: #875C31; }
+    background-color: #560A05; }
