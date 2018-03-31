@@ -29,20 +29,23 @@
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
         color: #C18C4A;
         outline: none; }
-      #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-        color: #C18C4A; }
+      #mainNav .navbar-nav li.nav-item a.nav-link:active {
+        color: white; } 
+      #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+        color: white; }
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
     text-transform: uppercase;
-    color: white;
-    border-color: white; 
-    background: #560A05;}
+    color: black;
+    border-color: black;
+    background: #C18C4A;
+    background-color: #C18C4A}
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-      color: white;
-      border-color: #fff;
-      background-color: #560A05;
-      background: #560A05;} 
+      color: black;
+      border-color: black;
+      background-color: #C18C4A;
+      background: #C18C4A;} 
 
 @media (min-width: 992px) {
   #mainNav {
@@ -59,10 +62,10 @@
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: white;
       border-radius: 3px;
-      background: #560A05; }
+      background: #C18C4A; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         color: white;
-        background: #560A05; }
+        background: #C18C4A; }
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px; }
