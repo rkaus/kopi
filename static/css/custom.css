@@ -80,7 +80,9 @@ header.masthead {
   padding-bottom: 50px;*/
   text-align: center;
   color: white;
-  background: #C18C4A; }
+  background: url(/img/IMG_0136_tu.JPG) no-repeat scroll center bottom, linear-gradient(black,#662D20);
+  background-size: contain; }
+  /*background: #C18C4A; }*/
 
 
   hr.star-light:after {
@@ -92,9 +94,26 @@ header.masthead {
     padding-top: 200px;
     padding-bottom: 100px; }
     header.masthead .intro-text .name {
+      outline-color: black;
       font-size: 4.75em; }
     header.masthead .intro-text .skills {
+      outline-color: black;
       font-size: 1.75em; } }
+
+
+#backgroundimage
+{
+   height: auto;
+   left: 0;
+   margin: 0;
+   max-height: 100%;
+   min-width: 674px;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
 
 
 /* ABOUT */
