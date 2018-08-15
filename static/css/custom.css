@@ -80,7 +80,7 @@ header.masthead {
   padding-bottom: 50px;*/
   text-align: center;
   color: white;
-  background: url(/img/IMG_0136_tu.JPG) ;
+  background: url(/img/IMG_0136_tu.JPG) center;
   /*padding: 77px 0px!important; }*/
   background-size: cover; }
   /*background: #C18C4A; }*/
@@ -93,7 +93,7 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 200px;
-    padding-bottom: 100px; }
+    padding-obttom: 100px; }
     header.masthead .intro-text .name {
       outline-color: black;
       font-size: 4.75em; }
@@ -107,7 +107,7 @@ header.masthead {
    height: auto;
    left: 0;
    margin: 0;
-   max-height: 100%;
+   min-height: 100%;
    min-width: 674px;
    padding: 0;
    position: fixed;
