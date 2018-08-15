@@ -80,8 +80,9 @@ header.masthead {
   padding-bottom: 50px;*/
   text-align: center;
   color: white;
-  background: url(/img/IMG_0136_tu.JPG) no-repeat scroll center bottom, linear-gradient(black,#662D20);
-  background-size: contain; }
+  background: url(/img/IMG_0136_tu.JPG) ;
+  /*padding: 77px 0px!important; }*/
+  background-size: cover; }
   /*background: #C18C4A; }*/
 
 
